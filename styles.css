@@ -217,6 +217,15 @@ header .wrapper .navbar .mode button:hover {
 
 .sidebar .photo p {
   color: var(--primary-color);
+  margin: 10px 0px;
+}
+
+.sidebar .photo .birth {
+  font-size: 14px;
+}
+
+.sidebar .photo .address {
+  font-size: 14px;
 }
 
 .sidebar .sidebar-menu .navbar .nav-item .nav-link {
