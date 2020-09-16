@@ -6,10 +6,19 @@
   --highlight-color: #f9e014;
   --primary-bg-color: whitesmoke;
   --second-bg-color: #222;
-  --third-bg-color: #444;
-  --four-bg-color: #333;
+  --third-bg-color: #333;
+  --four-bg-color: #444;
   --highlight-bg-color: #f9e014;
+  --Html5: #d54f30;
+  --Css3: #2466cc;
+  --Js: #89ca2b;
+  --Jquery: #bd0fcc;
+  --Bootstrap4: #0fcc7c;
+  --Eng: var(--highlight-color);
   --turn-off: var(--four-color);
+  --turn-off-shadow: #171717;
+  --shadow: #acacac;
+  --border-left-right: #eee;
 }
 
 * {
@@ -67,7 +76,7 @@ body {
 }
 
 .turn-off {
-  background: var(--turn-off);
+  background: var(--second-bg-color);
 }
 
 .turn-off h3 {
@@ -76,6 +85,12 @@ body {
 
 .turn-off div p {
   color: var(--primary-color) !important;
+}
+
+.turn-off .card {
+  -webkit-box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
+          box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
+  background: var(--four-bg-color) !important;
 }
 
 header .wrapper {
@@ -301,20 +316,103 @@ header .wrapper .navbar .mode button:hover {
   margin-top: 60px;
   margin-left: calc(250px - 180px);
   border-top: 1px solid var(--third-color);
-  height: 100vh;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
 }
 
-.content .row h3 {
+.content .container-fluid {
+  position: relative;
+  overflow-y: auto;
+  height: 93vh;
+}
+
+.content .container-fluid .row .card {
+  margin: 15px 5px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 20px 0px var(--shadow);
+          box-shadow: 0px 0px 20px 0px var(--shadow);
+  border-radius: 10px;
+  background: var(--primary-bg-color);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.content .container-fluid .row .card .card-title h3 {
   margin: 10px 0px;
 }
 
-.content .row div {
+.content .container-fluid .row .card .card-content div div {
   margin: 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid var(--shadow);
 }
 
-.content .row div p i {
-  font-size: 26px;
+.content .container-fluid .row .card .card-content div div span {
+  border-left: 1px solid var(--border-left-right);
+  border-right: 1px solid var(--border-left-right);
+}
+
+.content .container-fluid .row .card .card-content div div .level {
+  width: 25%;
+  height: 100%;
+}
+
+.content .container-fluid .row .card .card-content div .html5 {
+  height: 15px;
+  border-radius: 20px;
+}
+
+.content .container-fluid .row .card .card-content div .html5 .level {
+  background: var(--Html5);
+}
+
+.content .container-fluid .row .card .card-content div .css3 {
+  height: 15px;
+  border-radius: 20px;
+}
+
+.content .container-fluid .row .card .card-content div .css3 .level {
+  background: var(--Css3);
+}
+
+.content .container-fluid .row .card .card-content div .js {
+  height: 15px;
+  border-radius: 20px;
+}
+
+.content .container-fluid .row .card .card-content div .js .level {
+  background: var(--Js);
+}
+
+.content .container-fluid .row .card .card-content div .jquery {
+  height: 15px;
+  border-radius: 20px;
+}
+
+.content .container-fluid .row .card .card-content div .jquery .level {
+  background: var(--Jquery);
+}
+
+.content .container-fluid .row .card .card-content div .bootstrap4 {
+  height: 15px;
+  border-radius: 20px;
+}
+
+.content .container-fluid .row .card .card-content div .bootstrap4 .level {
+  background: var(--Bootstrap4);
+}
+
+.content .container-fluid .row .card .card-content div .eng {
+  height: 15px;
+  border-radius: 20px;
+}
+
+.content .container-fluid .row .card .card-content div .eng .level {
+  background: var(--Eng);
 }
 /*# sourceMappingURL=styles.css.map */
