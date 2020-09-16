@@ -217,7 +217,8 @@ header .wrapper .navbar .mode button:hover {
 
 .sidebar .photo p {
   color: var(--primary-color);
-  margin: 10px 0px;
+  margin: 10px auto;
+  width: 90%;
 }
 
 .sidebar .photo .birth {
@@ -280,7 +281,7 @@ header .wrapper .navbar .mode button:hover {
 .sidebar .social-menu {
   position: fixed;
   bottom: 0;
-  padding: 5px 40px;
+  padding: 5px 30px;
   width: 250px;
   -webkit-transition: all .4s ease-out;
   transition: all .4s ease-out;
