@@ -1,8 +1,8 @@
 :root {
   --primary-color: white;
   --second-color: black;
-  --third-color: #444;
-  --four-color: #333;
+  --third-color: #333;
+  --four-color: #444;
   --highlight-color: #f9e014;
   --primary-bg-color: whitesmoke;
   --second-bg-color: #222;
@@ -94,7 +94,7 @@ body {
 }
 
 header .wrapper {
-  background: var(--second-bg-color);
+  background: var(--third-bg-color);
   position: fixed;
   width: 100%;
 }
