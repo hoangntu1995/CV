@@ -55,6 +55,12 @@ body {
   display: none !important;
 }
 
+.collapse .sidebar-menu .navbar .nav-item .sub-menu {
+  max-width: 0 !important;
+  display: none !important;
+  background: var(--third-bg-color) !important;
+}
+
 .collapse .social-menu {
   position: fixed !important;
   padding: 0px 15px !important;
@@ -91,6 +97,11 @@ body {
   -webkit-box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
           box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
   background: var(--four-bg-color) !important;
+}
+
+.show {
+  display: block !important;
+  max-width: 50vh !important;
 }
 
 header .wrapper {
@@ -252,6 +263,7 @@ header .wrapper .navbar .mode button:hover {
 
 .sidebar .sidebar-menu .navbar .nav-item .nav-link:hover {
   background: var(--four-bg-color);
+  cursor: pointer;
 }
 
 .sidebar .sidebar-menu .navbar .nav-item .nav-link:hover::before {
@@ -276,6 +288,21 @@ header .wrapper .navbar .mode button:hover {
   height: 100%;
   content: "";
   background: var(--highlight-bg-color);
+}
+
+.sidebar .sidebar-menu .navbar .nav-item .sub-menu {
+  max-width: 0;
+  display: none;
+  background: var(--third-bg-color);
+  -webkit-transition: all .4s ease-out;
+  transition: all .4s ease-out;
+}
+
+.sidebar .sidebar-menu .navbar .nav-item .sub-menu p {
+  position: relative;
+  padding: 5px 30px;
+  display: block;
+  color: var(--primary-color);
 }
 
 .sidebar .social-menu {
@@ -415,6 +442,15 @@ header .wrapper .navbar .mode button:hover {
 
 .content .container-fluid .row .card .card-content div .bootstrap4 .level {
   background: var(--Bootstrap4);
+}
+
+.content .container-fluid .row .card .card-content div .github {
+  height: 15px;
+  border-radius: 20px;
+}
+
+.content .container-fluid .row .card .card-content div .github .level {
+  background: var(--Eng);
 }
 
 .content .container-fluid .row .card .card-content div .eng {
