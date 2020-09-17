@@ -232,6 +232,10 @@ header .wrapper .navbar .mode button:hover {
   width: 90%;
 }
 
+.sidebar .photo .name {
+  color: var(--highlight-color);
+}
+
 .sidebar .photo .birth {
   font-size: 14px;
 }
@@ -450,7 +454,7 @@ header .wrapper .navbar .mode button:hover {
 }
 
 .content .container-fluid .row .card .card-content div .github .level {
-  background: var(--Eng);
+  background: var(--highlight-color);
 }
 
 .content .container-fluid .row .card .card-content div .eng {
