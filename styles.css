@@ -16,6 +16,7 @@
   --Bootstrap4: #0fcc7c;
   --Eng: var(--highlight-color);
   --turn-off: var(--four-color);
+  --text: #14f998;
   --turn-off-shadow: #171717;
   --shadow: #acacac;
   --border-left-right: #eee;
@@ -97,6 +98,10 @@ body {
   -webkit-box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
           box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
   background: var(--four-bg-color) !important;
+}
+
+.turn-off .card .text {
+  color: var(--text) !important;
 }
 
 .show {
@@ -244,6 +249,11 @@ header .wrapper .navbar .mode button:hover {
   font-size: 14px;
 }
 
+.sidebar .sidebar-menu {
+  max-height: 257px;
+  overflow-y: auto;
+}
+
 .sidebar .sidebar-menu .navbar .nav-item .nav-link {
   position: relative;
   padding: 20px;
@@ -304,9 +314,13 @@ header .wrapper .navbar .mode button:hover {
 
 .sidebar .sidebar-menu .navbar .nav-item .sub-menu p {
   position: relative;
-  padding: 5px 30px;
+  padding: 15px 25px;
   display: block;
   color: var(--primary-color);
+}
+
+.sidebar .sidebar-menu .navbar .nav-item .sub-menu p .score {
+  color: var(--text) !important;
 }
 
 .sidebar .social-menu {
@@ -357,8 +371,8 @@ header .wrapper .navbar .mode button:hover {
   margin-top: 60px;
   margin-left: calc(250px - 180px);
   border-top: 1px solid var(--third-color);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .content .container-fluid {
@@ -374,12 +388,16 @@ header .wrapper .navbar .mode button:hover {
           box-shadow: 0px 0px 20px 0px var(--shadow);
   border-radius: 10px;
   background: var(--primary-bg-color);
-  -webkit-transition: all .4s ease-in-out;
-  transition: all .4s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .content .container-fluid .row .card .card-title h3 {
   margin: 10px 0px;
+}
+
+.content .container-fluid .row .card .card-content .text {
+  font-weight: 700;
 }
 
 .content .container-fluid .row .card .card-content div div {
@@ -403,7 +421,7 @@ header .wrapper .navbar .mode button:hover {
   height: 100%;
 }
 
-.content .container-fluid .row .card .card-content div .html5 {
+.content .container-fluid .row .card .card-content div .html5, .content .container-fluid .row .card .card-content div .css3, .content .container-fluid .row .card .card-content div .js, .content .container-fluid .row .card .card-content div .jquery, .content .container-fluid .row .card .card-content div .bootstrap4, .content .container-fluid .row .card .card-content div .talk, .content .container-fluid .row .card .card-content div .team, .content .container-fluid .row .card .card-content div .github, .content .container-fluid .row .card .card-content div .eng {
   height: 15px;
   border-radius: 20px;
 }
@@ -412,57 +430,23 @@ header .wrapper .navbar .mode button:hover {
   background: var(--Html5);
 }
 
-.content .container-fluid .row .card .card-content div .css3 {
-  height: 15px;
-  border-radius: 20px;
-}
-
 .content .container-fluid .row .card .card-content div .css3 .level {
   background: var(--Css3);
-}
-
-.content .container-fluid .row .card .card-content div .js {
-  height: 15px;
-  border-radius: 20px;
 }
 
 .content .container-fluid .row .card .card-content div .js .level {
   background: var(--Js);
 }
 
-.content .container-fluid .row .card .card-content div .jquery {
-  height: 15px;
-  border-radius: 20px;
-}
-
 .content .container-fluid .row .card .card-content div .jquery .level {
   background: var(--Jquery);
-}
-
-.content .container-fluid .row .card .card-content div .bootstrap4 {
-  height: 15px;
-  border-radius: 20px;
 }
 
 .content .container-fluid .row .card .card-content div .bootstrap4 .level {
   background: var(--Bootstrap4);
 }
 
-.content .container-fluid .row .card .card-content div .github {
-  height: 15px;
-  border-radius: 20px;
-}
-
-.content .container-fluid .row .card .card-content div .github .level {
+.content .container-fluid .row .card .card-content div .talk .level, .content .container-fluid .row .card .card-content div .team .level, .content .container-fluid .row .card .card-content div .github .level, .content .container-fluid .row .card .card-content div .eng .level {
   background: var(--highlight-color);
-}
-
-.content .container-fluid .row .card .card-content div .eng {
-  height: 15px;
-  border-radius: 20px;
-}
-
-.content .container-fluid .row .card .card-content div .eng .level {
-  background: var(--Eng);
 }
 /*# sourceMappingURL=styles.css.map */
