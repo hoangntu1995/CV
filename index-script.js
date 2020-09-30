@@ -1,14 +1,18 @@
-$(window).on('load', function(){
-    $('.btn button').on('click', function(){
+function action() {
+    $('.btn button').on('click', function () {
         $('.sidebar').toggleClass('collapse');
     });
-    $('button .fa-sun').on('click',function(){
+    $('button .fa-sun').on('click', function () {
         $('.content').toggleClass('turn-off');
     })
-    $('#dropdown-box1').on('click',function(){
+    $('#dropdown-box1').on('click', function () {
         $(".sub-menu[target='dropdown-box1']").toggleClass('show');
     })
-    $('#dropdown-box2').on('click',function(){
+    $('#dropdown-box2').on('click', function () {
         $(".sub-menu[target='dropdown-box2']").toggleClass('show');
     })
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    action();
 });

@@ -9,16 +9,17 @@
   --third-bg-color: #333;
   --four-bg-color: #444;
   --highlight-bg-color: #f9e014;
-  --Html5: #d54f30;
-  --Css3: #2466cc;
-  --Js: #89ca2b;
-  --Jquery: #bd0fcc;
-  --Bootstrap4: #0fcc7c;
+  --Html5:#f75631;
+  --Css3: #3b84f4;
+  --Js: #a4fb27;
+  --Jquery: #d224e1;
+  --Bootstrap4: #30d58f;
   --Eng: var(--highlight-color);
   --turn-off: var(--four-color);
   --text: #14f998;
   --turn-off-shadow: #171717;
-  --shadow: #acacac;
+  --shadow: #999;
+  --shadow-bar: #666;
   --border-left-right: #eee;
 }
 
@@ -250,7 +251,7 @@ header .wrapper .navbar .mode button:hover {
 }
 
 .sidebar .sidebar-menu {
-  max-height: 257px;
+  max-height: 330px;
   overflow-y: auto;
 }
 
@@ -384,8 +385,8 @@ header .wrapper .navbar .mode button:hover {
 .content .container-fluid .row .card {
   margin: 15px 5px;
   padding: 20px;
-  -webkit-box-shadow: 0px 0px 20px 0px var(--shadow);
-          box-shadow: 0px 0px 20px 0px var(--shadow);
+  -webkit-box-shadow: 0px 0px 15px 0px var(--shadow);
+          box-shadow: 0px 0px 15px 0px var(--shadow);
   border-radius: 10px;
   background: var(--primary-bg-color);
   -webkit-transition: all .3s ease-in-out;
@@ -400,6 +401,19 @@ header .wrapper .navbar .mode button:hover {
   font-weight: 700;
 }
 
+.content .container-fluid .row .card .card-content div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .content .container-fluid .row .card .card-content div div {
   margin: 10px 0px;
   display: -webkit-box;
@@ -408,45 +422,42 @@ header .wrapper .navbar .mode button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid var(--shadow);
+  border: 1px solid var(--shadow-bar);
 }
 
 .content .container-fluid .row .card .card-content div div span {
-  border-left: 1px solid var(--border-left-right);
-  border-right: 1px solid var(--border-left-right);
-}
-
-.content .container-fluid .row .card .card-content div div .level {
-  width: 25%;
+  display: block;
   height: 100%;
 }
 
-.content .container-fluid .row .card .card-content div .html5, .content .container-fluid .row .card .card-content div .css3, .content .container-fluid .row .card .card-content div .js, .content .container-fluid .row .card .card-content div .jquery, .content .container-fluid .row .card .card-content div .bootstrap4, .content .container-fluid .row .card .card-content div .talk, .content .container-fluid .row .card .card-content div .team, .content .container-fluid .row .card .card-content div .github, .content .container-fluid .row .card .card-content div .eng {
-  height: 15px;
+.content .container-fluid .row .card .card-content div div .bar {
+  width: 0%;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.content .container-fluid .row .card .card-content div .html5, .content .container-fluid .row .card .card-content div .css3, .content .container-fluid .row .card .card-content div .js, .content .container-fluid .row .card .card-content div .jquery, .content .container-fluid .row .card .card-content div .bootstrap4 {
+  height: 7px;
   border-radius: 20px;
 }
 
-.content .container-fluid .row .card .card-content div .html5 .level {
+.content .container-fluid .row .card .card-content div .html5 .bar {
   background: var(--Html5);
 }
 
-.content .container-fluid .row .card .card-content div .css3 .level {
+.content .container-fluid .row .card .card-content div .css3 .bar {
   background: var(--Css3);
 }
 
-.content .container-fluid .row .card .card-content div .js .level {
+.content .container-fluid .row .card .card-content div .js .bar {
   background: var(--Js);
 }
 
-.content .container-fluid .row .card .card-content div .jquery .level {
+.content .container-fluid .row .card .card-content div .jquery .bar {
   background: var(--Jquery);
 }
 
-.content .container-fluid .row .card .card-content div .bootstrap4 .level {
+.content .container-fluid .row .card .card-content div .bootstrap4 .bar {
   background: var(--Bootstrap4);
-}
-
-.content .container-fluid .row .card .card-content div .talk .level, .content .container-fluid .row .card .card-content div .team .level, .content .container-fluid .row .card .card-content div .github .level, .content .container-fluid .row .card .card-content div .eng .level {
-  background: var(--highlight-color);
 }
 /*# sourceMappingURL=styles.css.map */
