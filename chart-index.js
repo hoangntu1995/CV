@@ -51,7 +51,7 @@ function chart_index(arr) {
     });
 }
 
-var url = "https://github.com/hoangntu1995/CV/edit/master/chart-data-Index.json";
+var url = "https://hoangntu1995.github.io/CV/chart-data-Index.json";
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = () => {
     if (xhr.readyState == 4 && xhr.status == 200) {
