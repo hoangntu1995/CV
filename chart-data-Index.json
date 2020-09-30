@@ -1,0 +1,29 @@
+{
+    "html5": {
+        "data" : "84%"
+    },
+    "css3": {
+        "data" : "81%"
+    },
+    "javascript": {
+        "data" : "61%"
+    },
+    "jquery": {
+        "data" : "52%"
+    },
+    "bootstrap4": {
+        "data" : "53%"
+    },
+    "talk": {
+        "data" : "66"
+    },
+    "teamwork": {
+        "data" : "55"
+    },
+    "github": {
+        "data" : "57"
+    },
+    "english": {
+        "data" : "53"
+    }
+}
