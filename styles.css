@@ -83,6 +83,10 @@ body {
   font-size: 18px !important;
 }
 
+.collapse .social-menu ul li:hover {
+  font-size: 22px !important;
+}
+
 .turn-off {
   background: var(--second-bg-color);
 }
@@ -106,8 +110,7 @@ body {
 }
 
 .show {
-  display: block !important;
-  max-width: 50vh !important;
+  max-height: 50vh !important;
 }
 
 header .wrapper {
@@ -202,6 +205,7 @@ header .wrapper .navbar .mode button i {
 
 header .wrapper .navbar .mode button:hover {
   color: var(--highlight-color);
+  font-size: 20px !important;
 }
 
 .sidebar {
@@ -306,11 +310,11 @@ header .wrapper .navbar .mode button:hover {
 }
 
 .sidebar .sidebar-menu .navbar .nav-item .sub-menu {
-  max-width: 0;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
   background: var(--third-bg-color);
-  -webkit-transition: all .4s ease-out;
-  transition: all .4s ease-out;
+  -webkit-transition: max-height .4s ease-in-out;
+  transition: max-height .4s ease-in-out;
 }
 
 .sidebar .sidebar-menu .navbar .nav-item .sub-menu p {
@@ -351,7 +355,7 @@ header .wrapper .navbar .mode button:hover {
 }
 
 .sidebar .social-menu ul li {
-  font-size: 22px;
+  font-size: 20px;
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -383,10 +387,10 @@ header .wrapper .navbar .mode button:hover {
 }
 
 .content .container-fluid .row .card {
-  margin: 15px 5px;
+  margin: 15px 0px;
   padding: 20px;
-  -webkit-box-shadow: 0px 0px 15px 0px var(--shadow);
-          box-shadow: 0px 0px 15px 0px var(--shadow);
+  -webkit-box-shadow: 0px 0px 12px 0px var(--shadow);
+          box-shadow: 0px 0px 12px 0px var(--shadow);
   border-radius: 10px;
   background: var(--primary-bg-color);
   -webkit-transition: all .3s ease-in-out;
@@ -401,7 +405,7 @@ header .wrapper .navbar .mode button:hover {
   font-weight: 700;
 }
 
-.content .container-fluid .row .card .card-content div p {
+.content .container-fluid .row .card .card-content div .progress-tit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
