@@ -7,16 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap-grid.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="Chart.js"></script>
+    <script src="./javascript/Chart.js"></script>
 
-    <script src="chart-index.js"></script>
-    <script src="index-script.js"></script>
+    <script src="./javascript/chart-index.js"></script>
+    <script src="./javascript/index-script.js"></script>
 
     <title>CV Front End</title>
 </head>
@@ -49,16 +49,13 @@
         <div class="sidebar-menu">
             <ul class="navbar">
                 <li class="nav-item" id="dropdown-box1">
-                    <a class="nav-link active">
+                    <a class="nav-link active" href="#dropdown-box1">
                         <span class="icon"><i class="fas fa-school"></i></span>
                         <span class="title">Education</span>
                     </a>
-                    <div class="sub-menu" target="dropdown-box1">
+                    <div class="sub-menu">
                         <p>- Đại học Nha Trang</p>
-                        <p>
-                            - Cao đẳng: Công nghệ thông tin
-                            <br>
-                        </p>
+                        <p>- Cao đẳng: Công nghệ thông tin</p>
                         <p>
                             - Điểm tích lũy hệ 10: <span class="score">6.28</span>
                             <br>
@@ -67,11 +64,11 @@
                     </div>
                 </li>
                 <li class="nav-item" id="dropdown-box2">
-                    <a class="nav-link">
+                    <a class="nav-link" href="#dropdown-box2">
                         <span class="icon"><i class="fas fa-language"></i></span>
                         <span class="title">Languages</span>
                     </a>
-                    <div class="sub-menu" target="dropdown-box2">
+                    <div class="sub-menu">
                         <p>- English</p>
                     </div>
                 </li>
@@ -104,12 +101,9 @@
                         </div>
                         <div class="card-content">
                             <div>
-                                <p>- Name: Đặng Hữu Hoàng</p>
-                                <br>
-                                <p>- Birthday: 25/11/1995</p>
-                                <br>
-                                <p>- Address: 23/10, Nha Trang, Khánh Hòa</p>
-                                <br>
+                                <p>- Name: Đặng Hữu Hoàng</p><br>
+                                <p>- Birthday: 25/11/1995</p><br>
+                                <p>- Address: 23/10, Nha Trang, Khánh Hòa</p><br>
                                 <p>- Gmail: hoangntu56@gmail.com</p>
                             </div>
                         </div>
@@ -120,9 +114,7 @@
                         <div class="row">
                             <div class="col-lg-7">
                                 <div class="card-title">
-                                    <h3>
-                                        Soft Skills, Languages:
-                                    </h3>
+                                    <h3>Soft Skills, Languages:</h3>
                                 </div>
                                 <div class="card-content">
                                     <canvas id="chart-skill">
@@ -131,53 +123,41 @@
                             </div>
                             <div class="col-lg-5">
                                 <div class="card-title">
-                                    <h3>
-                                        Advanced Skills:
-                                    </h3>
+                                    <h3>Advanced Skills:</h3>
                                 </div>
                                 <div class="card-content">
                                     <div>
                                         <p class="progress-tit">
                                             <span>HTML5:</span>
-                                            <span class="pchtml">
-                                                0%
-                                            </span>
+                                            <span class="pchtml">0%</span>
                                         </p>
                                         <div class="html5">
                                             <span class="bar"></span>
                                         </div>
                                         <p class="progress-tit">
                                             <span>CSS3:</span>
-                                            <span class="pccss">
-                                                0%
-                                            </span>
+                                            <span class="pccss">0%</span>
                                         </p>
                                         <div class="css3">
                                             <span class="bar"></span>
                                         </div>
                                         <p class="progress-tit">
                                             <span>Javascript:</span>
-                                            <span class="pcjs">
-                                                0%
-                                            </span>
+                                            <span class="pcjs">0%</span>
                                         </p>
                                         <div class="js">
                                             <span class="bar"></span>
                                         </div>
                                         <p class="progress-tit">
                                             <span>Jquery:</span>
-                                            <span class="pcjquery">
-                                                0%
-                                            </span>
+                                            <span class="pcjquery">0%</span>
                                         </p>
                                         <div class="jquery">
                                             <span class="bar"></span>
                                         </div>
                                         <p class="progress-tit">
                                             <span>Bootstrap 4:</span>
-                                            <span class="pcbst">
-                                                0%
-                                            </span>
+                                            <span class="pcbst">0%</span>
                                         </p>
                                         <div class="bootstrap4">
                                             <span class="bar"></span>
@@ -186,10 +166,10 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-5">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="card">
                         <div class="card-title">
                             <h3>
@@ -197,64 +177,42 @@
                             </h3>
                         </div>
                         <div class="card-content">
-                            <p>
-                                Siêu thị MM MegaMarket Nha Trang:
-                            </p>
-                            <p>
-                                - Thời gian: 11/2019 - 2/2020
-                            </p>
-                            <p>
-                                - Vị trí: Nhân viên ngành hàng
-                            </p>
+                            <p>Siêu thị MM MegaMarket Nha Trang:</p>
+                            <p>- Thời gian: 11/2019 - 2/2020</p>
+                            <p>- Vị trí: Nhân viên ngành hàng</p>
                             <br>
-                            <p>
-                                Công ty Bao Bì Hải Nam Nha Trang:
-                            </p>
-                            <p>
-                                - Thời gian: 2/2020 - 4/2020
-                            </p>
-                            <p>
-                                - Vị trí: Nhân viên văn phòng
-                            </p>
+                            <p>Công ty Bao Bì Hải Nam Nha Trang:</p>
+                            <p>- Thời gian: 2/2020 - 4/2020</p>
+                            <p>- Vị trí: Nhân viên văn phòng</p>
                             <br>
-                            <p>
-                                Công ty phần mềm ITTVN Nha Trang:
-                            </p>
-                            <p>
-                                - Thời gian: 4/2020 - 8/2020
-                            </p>
-                            <p>
-                                - Vị trí: <span class="text">Lập trình viên giao diện</span>
-                            </p>
-                            <p>
-                                - Chi tiết công việc:
-                                <br>
+                            <p>Công ty phần mềm ITTVN Nha Trang:</p>
+                            <p>- Thời gian: 4/2020 - 8/2020</p>
+                            <p>- Vị trí: <span class="text">Lập trình viên giao diện</span></p>
+                            <p>- Chi tiết công việc:
+                            <br>
                             <p class="text">&nbsp;&nbsp;1. Phân tích, dựng layout theo chuẩn UX/UI</p>
                             <p class="text">&nbsp;&nbsp;2. Lập trình các hiệu ứng, thao tác trên giao diện</p>
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <div class="card-title">
-                            <h3>
-                                Career Goals:
-                            </h3>
+                            <h3>Career Goals:</h3>
                         </div>
                         <div class="card-content">
-                            <p>- Mong muốn được làm việc và cống hiến cho công ty.</p>
+                            <p>- Ngắn hạn: Có một công việc ổn định, tích lũy thêm nhiều kinh nghiệm, rèn luyện các kỹ
+                                năng chuyên môn.</p>
                             <br>
-                            <p>- Nổ lực hết mình để có cơ hội trở thành nhân viên chính thức.</p>
+                            <p>- Dài hạn: Có cơ hội trở thành nhân viên cấp cao.</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="card">
                         <div class="card-title">
-                            <h3>
-                                Forte:
-                            </h3>
+                            <h3>Forte:</h3>
                         </div>
                         <div class="card-content">
                             <p>- Siêng năng</p>
@@ -266,7 +224,7 @@
             </div>
         </div>
     </div>
-    
+
 </body>
 
 </html>

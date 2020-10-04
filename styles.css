@@ -255,8 +255,7 @@ header .wrapper .navbar .mode button:hover {
 }
 
 .sidebar .sidebar-menu {
-  max-height: 330px;
-  overflow-y: auto;
+  position: relative;
 }
 
 .sidebar .sidebar-menu .navbar .nav-item .nav-link {
@@ -328,6 +327,10 @@ header .wrapper .navbar .mode button:hover {
   color: var(--text) !important;
 }
 
+.sidebar .sidebar-menu .navbar .nav-item:target .sub-menu {
+  max-height: 100vh !important;
+}
+
 .sidebar .social-menu {
   position: fixed;
   bottom: 0;
@@ -387,6 +390,7 @@ header .wrapper .navbar .mode button:hover {
 }
 
 .content .container-fluid .row .card {
+  position: relative;
   margin: 15px 0px;
   padding: 20px;
   -webkit-box-shadow: 0px 0px 12px 0px var(--shadow);
@@ -395,6 +399,7 @@ header .wrapper .navbar .mode button:hover {
   background: var(--primary-bg-color);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  min-height: 395px;
 }
 
 .content .container-fluid .row .card .card-title h3 {
