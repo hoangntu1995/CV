@@ -551,5 +551,6 @@ header .wrapper .navbar .mode button:hover {
 .content .container-fluid .row .card .close button:hover > i {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+        color: #999;
 }
 /*# sourceMappingURL=styles.css.map */
