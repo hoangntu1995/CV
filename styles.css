@@ -548,6 +548,10 @@ header .wrapper .navbar .mode button:hover {
   line-height: 20px;
 }
 
+.content .container-fluid .row .card .close button i{
+  display: block;
+}
+
 .content .container-fluid .row .card .close button:hover > i {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
