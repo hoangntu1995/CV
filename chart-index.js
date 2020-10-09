@@ -36,7 +36,7 @@ function chart_index(arr) {
                     barThickness: 30,
                     ticks: {
                         fontLabel: '#888',
-                        fontColor: '#888',
+                        fontColor: '#888'
                     }
                 }],
                 yAxes: [{
