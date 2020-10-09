@@ -15,6 +15,10 @@
   --Jquery: #d224e1;
   --Bootstrap4: #30d58f;
   --Eng: var(--highlight-color);
+  --card-intro1: var(--Css3);
+  --card-intro2: var(--Bootstrap4);
+  --card-intro3: var(--Jquery);
+  --card-intro4: var(--Html5);
   --turn-off: var(--four-color);
   --text: #14f998;
   --turn-off-shadow: #171717;
@@ -91,18 +95,23 @@ body {
   background: var(--second-bg-color);
 }
 
-.turn-off h3 {
-  color: var(--highlight-color);
-}
-
-.turn-off div p {
-  color: var(--primary-color) !important;
+.turn-off .card-intro1, .turn-off .card-intro2, .turn-off .card-intro3, .turn-off .card-intro4 {
+  -webkit-box-shadow: 0px 0px 12px 0px var(--turn-off-shadow) !important;
+          box-shadow: 0px 0px 12px 0px var(--turn-off-shadow) !important;
 }
 
 .turn-off .card {
   -webkit-box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
           box-shadow: 0px 0px 20px 0px var(--turn-off-shadow) !important;
   background: var(--four-bg-color) !important;
+}
+
+.turn-off .card h3 {
+  color: var(--highlight-color);
+}
+
+.turn-off .card div p {
+  color: var(--primary-color) !important;
 }
 
 .turn-off .card .text {
@@ -389,6 +398,54 @@ header .wrapper .navbar .mode button:hover {
   height: 93vh;
 }
 
+.content .container-fluid .row .card-intro1, .content .container-fluid .row .card-intro2, .content .container-fluid .row .card-intro3, .content .container-fluid .row .card-intro4 {
+  position: relative;
+  margin: 15px 0px;
+  padding: 20px;
+  border-radius: 5px;
+  min-height: 180px;
+  -webkit-box-shadow: 0px 0px 5px 0px var(--turn-off-shadow);
+          box-shadow: 0px 0px 5px 0px var(--turn-off-shadow);
+}
+
+.content .container-fluid .row .card-intro1 h3, .content .container-fluid .row .card-intro2 h3, .content .container-fluid .row .card-intro3 h3, .content .container-fluid .row .card-intro4 h3 {
+  color: var(--primary-color);
+}
+
+.content .container-fluid .row .card-intro1 div p, .content .container-fluid .row .card-intro2 div p, .content .container-fluid .row .card-intro3 div p, .content .container-fluid .row .card-intro4 div p {
+  color: var(--primary-color) !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.content .container-fluid .row .card-intro1 .icon, .content .container-fluid .row .card-intro2 .icon, .content .container-fluid .row .card-intro3 .icon, .content .container-fluid .row .card-intro4 .icon {
+  position: absolute;
+  top: 14%;
+  right: 10%;
+  color: white;
+}
+
+.content .container-fluid .row .card-intro1 .icon i, .content .container-fluid .row .card-intro2 .icon i, .content .container-fluid .row .card-intro3 .icon i, .content .container-fluid .row .card-intro4 .icon i {
+  font-size: 130px;
+  opacity: .2;
+}
+
+.content .container-fluid .row .card-intro1 {
+  background: var(--card-intro1);
+}
+
+.content .container-fluid .row .card-intro2 {
+  background: var(--card-intro2);
+}
+
+.content .container-fluid .row .card-intro3 {
+  background: var(--card-intro3);
+}
+
+.content .container-fluid .row .card-intro4 {
+  background: var(--card-intro4);
+}
+
 .content .container-fluid .row .card {
   position: relative;
   margin: 15px 0px;
@@ -399,7 +456,7 @@ header .wrapper .navbar .mode button:hover {
   background: var(--primary-bg-color);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
-  min-height: 395px;
+  min-height: 410px;
 }
 
 .content .container-fluid .row .card .card-title h3 {
@@ -468,5 +525,27 @@ header .wrapper .navbar .mode button:hover {
 
 .content .container-fluid .row .card .card-content div .bootstrap4 .bar {
   background: var(--Bootstrap4);
+}
+
+.content .container-fluid .row .card .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.content .container-fluid .row .card .close button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  height: 20px;
+  width: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.content .container-fluid .row .card .close button:hover > i {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 /*# sourceMappingURL=styles.css.map */

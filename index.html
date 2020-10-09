@@ -7,16 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="bootstrap-grid.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/bootstrap-grid.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
-    <script src="Chart.js"></script>
+    <script src="./javascript/Chart.js"></script>
 
-    <script src="chart-index.js"></script>
-    <script src="index-script.js"></script>
+    <script src="./javascript/chart-index.js"></script>
+    <script src="./javascript/index-script.js"></script>
 
     <title>CV Front End</title>
 </head>
@@ -42,7 +42,7 @@
     </header>
     <div class="sidebar collapse">
         <div class="photo">
-            <img src="1564481664878.jpg" alt="">
+            <img src="./images/1564481664878.jpg" alt="">
             <p class="name"><b>Đặng Hữu Hoàng</b></p>
             <p class="birth">Birthday: 25/11/1995</p>
         </div>
@@ -92,24 +92,69 @@
     <div class="content turn-off">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="card">
-                        <div class="card-title">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="card-intro1">
+                        <div class="icon"><i class="fas fa-user"></i></div>
+                        <div class="card-intro-title">
                             <h3>
-                                Information:
+                                Name:
                             </h3>
                         </div>
-                        <div class="card-content">
+                        <div class="card-intro-content">
                             <div>
-                                <p>- Name: Đặng Hữu Hoàng</p><br>
-                                <p>- Birthday: 25/11/1995</p><br>
-                                <p>- Address: 23/10, Nha Trang, Khánh Hòa</p><br>
-                                <p>- Gmail: hoangntu56@gmail.com</p>
+                                <p>Đặng Hữu Hoàng</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-9">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="card-intro2">
+                        <div class="icon"><i class="fas fa-birthday-cake"></i></div>
+                        <div class="card-intro-title">
+                            <h3>
+                                Birthday:
+                            </h3>
+                        </div>
+                        <div class="card-intro-content">
+                            <div>
+                                <p>25/11/1995</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="card-intro3">
+                        <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+                        <div class="card-intro-title">
+                            <h3>
+                                Address:
+                            </h3>
+                        </div>
+                        <div class="card-intro-content">
+                            <div>
+                                <p>23/10, Nha Trang, Khánh Hòa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                    <div class="card-intro4">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="card-intro-title">
+                            <h3>
+                                Gmail:
+                            </h3>
+                        </div>
+                        <div class="card-intro-content">
+                            <div>
+                                <p>hoangntu56@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-12 col-lg-12 col-xl-9">
                     <div class="card">
                         <div class="row">
                             <div class="col-lg-7">
@@ -166,10 +211,10 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div class="close"><button><i class="fas fa-times"></i></button></div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-3">
                     <div class="card">
                         <div class="card-title">
                             <h3>
@@ -194,9 +239,10 @@
                             <p class="text">&nbsp;&nbsp;2. Cài đặt hiệu ứng, thao tác trên giao diện</p>
                             </p>
                         </div>
+                        <div class="close"><button><i class="fas fa-times"></i></button></div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-6">
                     <div class="card">
                         <div class="card-title">
                             <h3>Career Goals:</h3>
@@ -207,9 +253,10 @@
                             <br>
                             <p>- Dài hạn: Có cơ hội trở thành nhân viên cấp cao.</p>
                         </div>
+                        <div class="close"><button><i class="fas fa-times"></i></button></div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-6">
                     <div class="card">
                         <div class="card-title">
                             <h3>Forte:</h3>
@@ -219,6 +266,7 @@
                             <br>
                             <p>- Chịu khó học hỏi</p>
                         </div>
+                        <div class="close"><button><i class="fas fa-times"></i></button></div>
                     </div>
                 </div>
             </div>
