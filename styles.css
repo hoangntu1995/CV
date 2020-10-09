@@ -118,6 +118,10 @@ body {
   color: var(--text) !important;
 }
 
+.turn-off .card .close button {
+  color: white !important;
+}
+
 .show {
   max-height: 50vh !important;
 }
@@ -536,7 +540,7 @@ header .wrapper .navbar .mode button:hover {
 .content .container-fluid .row .card .close button {
   background: none;
   border: none;
-  color: white;
+  color: black;
   cursor: pointer;
   height: 20px;
   width: 15px;
