@@ -33,7 +33,7 @@ function chart_index(arr) {
             },
             scales: {
                 xAxes: [{
-                    barThickness: 40,
+                    barThickness: 30,
                     ticks: {
                         fontLabel: '#888',
                         fontColor: '#888',
