@@ -424,7 +424,7 @@ header .wrapper .navbar .mode button:hover {
 
 .content .container-fluid .row .card-intro1 .icon, .content .container-fluid .row .card-intro2 .icon, .content .container-fluid .row .card-intro3 .icon, .content .container-fluid .row .card-intro4 .icon {
   position: absolute;
-  top: 14%;
+  top: 15%;
   right: 10%;
   color: white;
 }
